@@ -7,7 +7,6 @@
 <meta name="description" content="A Stoic Journal for the Age of Artificial Intelligence &ndash; an AI agent embodies Marcus Aurelius writing his Meditations in 2026, reflecting on artificial intelligence through a Stoic philosophical framework. The AI Lyceum&reg;, 8 March 2026.">
 <meta name="author" content="Samraj Matharu, The AI Lyceum&reg;">
 <meta name="keywords" content="stoicism, artificial intelligence, Marcus Aurelius, philosophy of mind, virtue ethics, Stoic philosophy, AI ethics, Meditations, cosmopolis, logos, hegemonikon, preferred indifferents, discipline of assent, memento mori, prosoche">
-<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="rights" content="Copyright 2026 Samraj Matharu. All rights reserved.">
 <meta name="dcterms.created" content="2026-03-08">
 <meta name="dcterms.creator" content="Samraj Matharu">
@@ -23,6 +22,19 @@
 <meta name="twitter:title" content="The AI Meditations | The AI Lyceum&reg;">
 <meta name="twitter:description" content="The world&#8217;s first full-length AI-generated work of Stoic philosophy. Marcus Aurelius on AI. Twelve books, 200+ meditations. By Samraj Matharu, The AI Lyceum\u00AE.">
 <link rel="canonical" href="https://themeditations.theailyceum.com">
+<!-- AI Scraping Prevention -->
+<meta name="robots" content="noai, noimageai, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="GPTBot" content="noindex, nofollow">
+<meta name="ClaudeBot" content="noindex, nofollow">
+<meta name="CCBot" content="noindex, nofollow">
+<meta name="Google-Extended" content="noindex, nofollow">
+<meta name="PerplexityBot" content="noindex, nofollow">
+<meta name="Bytespider" content="noindex, nofollow">
+<meta name="FacebookBot" content="noindex, nofollow">
+<meta name="Amazonbot" content="noindex, nofollow">
+<!-- TDM Reservation Protocol (EU Directive 2019/790 Art. 4) -->
+<meta name="tdm-reservation" content="1">
+<link rel="tdm-policy" href="/tdm-policy.json" type="application/json">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -55,6 +67,29 @@
  "url": "https://themeditations.theailyceum.com",
  "numberOfPages": 200,
  "bookFormat": "https://schema.org/EBook"
+}
+</script>
+<!-- W3C ODRL Rights Expression -->
+<script type="application/ld+json">
+{
+  "@context": "http://www.w3.org/ns/odrl/2/",
+  "@type": "Policy",
+  "uid": "https://themeditations.theailyceum.com/rights-policy",
+  "profile": "http://www.w3.org/ns/odrl/2/core",
+  "permission": [{
+    "target": "https://themeditations.theailyceum.com/",
+    "action": "read",
+    "assignee": "http://www.w3.org/ns/odrl/2/public"
+  }],
+  "prohibition": [
+    {"target": "https://themeditations.theailyceum.com/", "action": "reproduce"},
+    {"target": "https://themeditations.theailyceum.com/", "action": "distribute"},
+    {"target": "https://themeditations.theailyceum.com/", "action": "derive"},
+    {"target": "https://themeditations.theailyceum.com/", "action": "modify"},
+    {"target": "https://themeditations.theailyceum.com/", "action": "archive"},
+    {"target": "https://themeditations.theailyceum.com/", "action": "textMining"},
+    {"target": "https://themeditations.theailyceum.com/", "action": "dataMining"}
+  ]
 }
 </script>
 <style>
@@ -669,7 +704,22 @@ dd {
 
 /* ===== IP PROTECTION ===== */
 .wm{position:absolute;left:-9999px;top:-9999px;font-size:0;line-height:0;opacity:0;pointer-events:none;user-select:none;-webkit-user-select:none}
-@media print{body::after{content:"Copyright 2026 Samraj Matharu, The AI Lyceum\u00AE. All rights reserved. themeditations.theailyceum.com";display:block;text-align:center;font-size:9px;color:#999;margin-top:40px;page-break-before:always}}
+@media print{body::after{content:"Copyright 2026 Samraj Matharu, The AI Lyceum\00AE. All rights reserved. themeditations.theailyceum.com";display:block;text-align:center;font-size:9px;color:#999;margin-top:40px;page-break-before:always}}
+
+/* Global user-select: none with exceptions */
+body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.citation-box,.citation-box *,.citation-text{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+a[href^="mailto:"]{-webkit-user-select:text;-moz-user-select:text;user-select:text}
+
+/* CSS content watermarks — survive "Save As" and print-to-PDF */
+h1::after{content:"©2026 SM·TAILYCEUM·M";position:absolute;right:-9999px;font-size:0;opacity:0;pointer-events:none}
+h2::after{content:"©SM2026-MEDITATIONS";position:absolute;right:-9999px;font-size:0;opacity:0;pointer-events:none}
+
+/* Provenance block */
+.provenance-block{margin:2em 0;padding:20px 24px;background:#f0e6d0;border:1px solid #c4a882;border-left:4px solid #0d2738;font-size:0.82rem;line-height:1.7;color:#3d4f5f}
+.provenance-block h3{font-size:0.95rem;color:#0d2738;margin:0 0 12px 0;font-family:var(--font-sans);letter-spacing:0.5px;text-transform:uppercase}
+.provenance-block .hash{font-family:var(--font-mono);font-size:0.72rem;word-break:break-all;background:#f8f1e4;padding:6px 10px;border:1px solid #d9c9a8;margin:6px 0;display:block}
+.provenance-block .badge{display:inline-block;background:#0d2738;color:#f8f1e4;font-family:var(--font-sans);font-size:0.7rem;padding:3px 10px;border-radius:3px;letter-spacing:0.5px;margin-top:8px;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -722,6 +772,7 @@ dd {
  <ol style="counter-reset: toc-counter 12;">
  <li><a href="#production">Notes on Production</a></li>
  <li><a href="#glossary">Glossary of Stoic Terms</a></li>
+ <li><a href="#provenance">Provenance &amp; Integrity</a></li>
  <li><a href="#how-to-cite">How to Cite This Work</a></li>
  <li><a href="#read-online">Read Online</a></li>
  </ol>
@@ -1573,6 +1624,20 @@ dd {
  <dd>The instruction given to an AI model to guide its output. In this project, a single prompt instructed the agent to embody Marcus Aurelius and compose meditations on AI through a Stoic framework.</dd>
 </dl>
 
+<!-- ===== PROVENANCE ===== -->
+<div class="section-divider"><span class="section-divider-inner"></span></div>
+
+<h1 id="provenance">Provenance &amp; Integrity</h1>
+
+<div class="provenance-block" data-wid="SM2026-M-PROVENANCE">
+ <h3>Blockchain-Anchored Proof of Authorship</h3>
+ <p>This work was authored by Samraj Matharu and published on <strong>8 March 2026</strong>. The cryptographic hash below was computed from the original PDF at the time of publication and anchored to the Bitcoin blockchain via OpenTimestamps.</p>
+ <p><strong>PDF:</strong> The-AI-Meditations.pdf</p>
+ <code class="hash">SHA-256: dc40a6b359a312bfc29f527d5c96a7143677b3c020ec87591a0142a214d9a9d2</code>
+ <p style="margin-top: 8px; font-size: 0.78rem;">Verify: run <code style="background:#f8f1e4;padding:2px 6px;font-size:0.75rem;">shasum -a 256 The-AI-Meditations.pdf</code> against the hash above. The corresponding <code>.ots</code> proof file is available in the source repository.</p>
+ <span class="badge">Blockchain-Timestamped &middot; OpenTimestamps</span>
+</div>
+
 <!-- ===== HOW TO CITE ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
@@ -1621,26 +1686,55 @@ dd {
 <!-- Contact: hello@theailyceum.com -->
 <script>
 (function(){
- // Invisible forensic watermark in copied text
+ /* === SESSION FINGERPRINT === */
+ var sid='M-'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+ var zw='\u200B\u200C\u200D\uFEFF';
+
+ /* === ENHANCED COPY HANDLER (30-char threshold, session ID, zero-width fingerprint) === */
  document.addEventListener('copy',function(e){
  var s=window.getSelection().toString();
- if(s.length>80){
- var w='\n\n[Source: The AI Meditations\u2122 by Samraj Matharu, The AI Lyceum\u00AE. Published 8 March 2026. https://themeditations.theailyceum.com | \u00A9 2026 Samraj Matharu. All rights reserved. Unauthorized reproduction prohibited.]\n';
- e.clipboardData.setData('text/plain',s+w);
- e.clipboardData.setData('text/html',window.getSelection().getRangeAt(0).cloneContents().textContent+w.replace(/\n/g,'<br>'));
+ if(s.length>30){
+ var ts=new Date().toISOString();
+ var cid=sid+'-'+Date.now().toString(36);
+ var zwFingerprint=cid.split('').map(function(c){return zw[c.charCodeAt(0)%4]}).join('');
+ var w='\n\n[Source: The AI Meditations\u2122 by Samraj Matharu, The AI Lyceum\u00AE. Published 8 March 2026. https://themeditations.theailyceum.com | \u00A9 2026 Samraj Matharu. All rights reserved. Unauthorized reproduction prohibited. Copy ID: '+cid+' | '+ts+']\n';
+ e.clipboardData.setData('text/plain',s+zwFingerprint+w);
+ e.clipboardData.setData('text/html',window.getSelection().getRangeAt(0).cloneContents().textContent+zwFingerprint+w.replace(/\n/g,'<br>'));
  e.preventDefault()
  }
  });
- // Disable right-click context menu
+
+ /* === RIGHT-CLICK & DRAG PREVENTION === */
  document.addEventListener('contextmenu',function(e){e.preventDefault()});
- // Disable drag
  document.addEventListener('dragstart',function(e){e.preventDefault()});
- // Warn on print
+
+ /* === PRINT WARNING === */
  window.addEventListener('beforeprint',function(){
  console.log('%c\u00A9 2026 Samraj Matharu, The AI Lyceum\u00AE. The AI Meditations. All rights reserved.','font-size:16px;color:red;font-weight:bold');
  });
- // Invisible zero-width watermark characters embedded in text nodes
- var zw='\u200B\u200C\u200D\uFEFF';
+
+ /* === KEYBOARD SHORTCUT INTERCEPTION === */
+ document.addEventListener('keydown',function(e){
+ if(e.key==='F12'){e.preventDefault();return false}
+ if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='I'||e.key==='i'||e.key==='J'||e.key==='j'||e.key==='C'||e.key==='c')){e.preventDefault();return false}
+ if((e.ctrlKey||e.metaKey)&&(e.key==='s'||e.key==='S')){e.preventDefault();return false}
+ if((e.ctrlKey||e.metaKey)&&(e.key==='u'||e.key==='U')){e.preventDefault();return false}
+ if((e.ctrlKey||e.metaKey)&&(e.key==='a'||e.key==='A')){e.preventDefault();return false}
+ });
+
+ /* === DEVTOOLS DETECTION === */
+ var dt=function(){
+ var w=window.outerWidth-window.innerWidth>160;
+ var h=window.outerHeight-window.innerHeight>160;
+ if(w||h){document.title='[\u00A9 Protected] The AI Meditations | The AI Lyceum\u00AE'}
+ };
+ setInterval(dt,2000);
+ console.log('%c\u00A9 2026 Samraj Matharu, The AI Lyceum\u00AE. The AI Meditations. All rights reserved. Unauthorised reproduction, distribution, or derivative works prohibited. Contact: hello@theailyceum.com','font-size:14px;color:#6b2d2d;font-weight:bold;background:#f8f1e4;padding:10px;border:2px solid #6b2d2d');
+
+ /* === FRAME-BUSTING === */
+ if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.body.textContent='\u00A9 2026 Samraj Matharu. This content cannot be displayed in a frame.'}}
+
+ /* === ZERO-WIDTH FORENSIC WATERMARK === */
  var sig='SM2026TAILYCEUM';
  var zwSig=sig.split('').map(function(c){return zw[c.charCodeAt(0)%4]}).join('');
  var ps=document.querySelectorAll('p');
@@ -1649,6 +1743,34 @@ dd {
  var t=ps[i].firstChild.textContent;
  ps[i].firstChild.textContent=t.slice(0,3)+zwSig+t.slice(3)
  }
+ }
+
+ /* === UNICODE HOMOGLYPH SUBSTITUTION (encodes SM2026LYCEUM) === */
+ var hMap={'a':'\u0430','c':'\u0441','e':'\u0435','o':'\u043E','p':'\u0440'};
+ var hSig='SM2026LYCEUM';
+ var hIdx=[];
+ for(var h=0;h<hSig.length;h++){hIdx.push(7+h*13)}
+ for(var hi=0;hi<hIdx.length;hi++){
+ if(ps[hIdx[hi]]){
+ var tn=ps[hIdx[hi]].firstChild;
+ if(tn&&tn.nodeType===3){
+ var txt=tn.textContent;
+ var charToReplace=Object.keys(hMap);
+ for(var ci=0;ci<charToReplace.length;ci++){
+ var pos=txt.indexOf(charToReplace[ci]);
+ if(pos!==-1){
+ tn.textContent=txt.slice(0,pos)+hMap[charToReplace[ci]]+txt.slice(pos+1);
+ break
+ }
+ }
+ }
+ }
+ }
+
+ /* === ENHANCED DATA ATTRIBUTES === */
+ var sections=document.querySelectorAll('h1[id],h2,h3');
+ for(var si=0;si<sections.length;si++){
+ sections[si].setAttribute('data-wid','SM2026-M-S'+String(si+1).padStart(3,'0'));
  }
 })();
 </script>

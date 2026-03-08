@@ -1,0 +1,54 @@
+{
+  "@context": "http://www.w3.org/ns/odrl/2/",
+  "@type": "Policy",
+  "uid": "https://themeditations.theailyceum.com/tdm-policy",
+  "profile": "http://www.w3.org/ns/odrl/2/core",
+  "dc:title": "TDM Policy — The AI Meditations: A Stoic Journal for the Age of Artificial Intelligence",
+  "dc:creator": "Samraj Matharu",
+  "dc:rights": "Copyright 2026 Samraj Matharu. All rights reserved.",
+  "dc:date": "2026-03-08",
+  "permission": [
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "read",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    }
+  ],
+  "prohibition": [
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "reproduce",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    },
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "distribute",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    },
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "derive",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    },
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "modify",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    },
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "archive",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    },
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "textMining",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    },
+    {
+      "target": "https://themeditations.theailyceum.com/",
+      "action": "dataMining",
+      "assignee": "http://www.w3.org/ns/odrl/2/public"
+    }
+  ]
+}
