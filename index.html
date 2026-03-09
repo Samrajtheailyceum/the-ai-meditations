@@ -516,6 +516,51 @@ ol.references li {
   text-indent: -20px;
 }
 
+/* ===== PROVENANCE BLOCK ===== */
+.provenance-block {
+  margin: 2em 0;
+  padding: 20px 24px;
+  background: #f0e6d0;
+  border: 1px solid #c4a882;
+  border-left: 4px solid #0d2738;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #3d4f5f;
+}
+
+.provenance-block h3 {
+  font-size: 0.95rem;
+  color: #0d2738;
+  margin: 0 0 12px 0;
+  font-family: var(--font-sans);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.provenance-block code.hash {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  word-break: break-all;
+  background: #f8f1e4;
+  padding: 6px 10px;
+  border: 1px solid #d9c9a8;
+  margin: 6px 0;
+  display: block;
+}
+
+.provenance-block .badge {
+  display: inline-block;
+  background: #0d2738;
+  color: #f8f1e4;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
 /* ===== DISCLAIMER / EDITORIAL ===== */
 .disclaimer {
   background: var(--color-bg-alt);
@@ -759,6 +804,7 @@ dd {
   <ol style="counter-reset: toc-counter 12;">
     <li><a href="#production">Notes on Production</a></li>
     <li><a href="#glossary">Glossary of Stoic Terms</a></li>
+    <li><a href="#provenance">Provenance &amp; Integrity</a></li>
     <li><a href="#how-to-cite">How to Cite This Work</a></li>
     <li><a href="#read-online">Read Online</a></li>
   </ol>
@@ -1672,6 +1718,23 @@ dd {
   <dd>The instruction given to an AI model to guide its output. In this project, a single prompt instructed the agent to embody Marcus Aurelius and compose meditations on AI through a Stoic framework.</dd>
 </dl>
 
+<!-- ===== PROVENANCE & INTEGRITY ===== -->
+<div class="section-divider"><span class="section-divider-inner"></span></div>
+
+</div>
+<div class="document-page">
+<div class="page-number"></div>
+<h1 id="provenance">Provenance &amp; Integrity</h1>
+
+<div class="provenance-block" data-wid="SM2026-M-PROVENANCE">
+  <h3>Blockchain-Anchored Proof of Authorship</h3>
+  <p>This work was authored by Samraj Matharu and published on <strong>8 March 2026</strong>. The cryptographic hash below was computed from the original PDF at the time of publication and anchored to the Bitcoin blockchain via OpenTimestamps.</p>
+  <p><strong>PDF:</strong> The-AI-Meditations.pdf</p>
+  <code class="hash">SHA-256: dc40a6b359a312bfc29f527d5c96a7143677b3c020ec87591a0142a214d9a9d2</code>
+  <p style="margin-top: 8px; font-size: 0.78rem;">Verify: run <code style="background:#f8f1e4;padding:2px 6px;font-size:0.75rem;">shasum -a 256 The-AI-Meditations.pdf</code> against the hash above. The corresponding <code>.ots</code> proof file is available in the source repository.</p>
+  <span class="badge">Blockchain-Timestamped &middot; OpenTimestamps</span>
+</div>
+
 <!-- ===== HOW TO CITE ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
@@ -1709,7 +1772,11 @@ dd {
 
 <div class="citation-box">
   <h3>Read The AI Meditations Online</h3>
-  <p style="margin-bottom: 8px; font-size: 1.05rem;"><a href="https://meditations.theailyceum.com" style="color: #6b2d2d; font-weight: 600;">meditations.theailyceum.com</a></p>
+  <p style="margin-bottom: 8px; font-size: 1.05rem;"><a href="https://themeditations.theailyceum.com" style="color: #6b2d2d; font-weight: 600;">themeditations.theailyceum.com</a></p>
+
+  <h3 style="margin-top: 28px;">Also by The AI Lyceum</h3>
+  <p style="margin-bottom: 8px;"><strong>The AI Republic: A Dialogue</strong> · <a href="https://republic.theailyceum.com" style="color: #6b2d2d; font-weight: 600;">republic.theailyceum.com</a></p>
+  <p style="font-size: 0.92rem; color: #3d4f5f; margin-bottom: 20px;">A Platonic dialogue examining AI governance, democracy, and the soul of the state. What would Plato write about artificial intelligence?</p>
 
   <h3 style="margin-top: 28px;">General Thoughts & Commentary</h3>
   <p style="margin-bottom: 12px; font-size: 0.92rem;">Follow for broader reflections on AI, philosophy, and technology:</p>
