@@ -611,9 +611,21 @@ dd {
 @media (max-width: 768px) {
   html {
     font-size: 16px;
+    background: var(--color-bg);
   }
   body {
-    padding: 32px 20px 48px;
+    padding: 0;
+    background: var(--color-bg);
+  }
+  .document-page {
+    max-width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    box-shadow: none;
+  }
+  .page-number {
+    display: none;
   }
   .masthead .title {
     font-size: 1.9rem;
@@ -644,14 +656,17 @@ dd {
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 20px 16px 40px;
+  .document-page {
+    padding: 1rem 0.75rem;
   }
   .masthead .title {
     font-size: 1.6rem;
   }
   .masthead .logo {
     width: 90px;
+  }
+  .provenance-block, .abstract, .toc {
+    padding: 16px;
   }
 }
 
