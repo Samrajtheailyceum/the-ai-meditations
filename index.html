@@ -47,6 +47,24 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 60px 32px 80px;
+  counter-reset: page-number;
+}
+
+/* Page number display for on-screen viewing */
+.page-number {
+  counter-increment: page-number;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: #999;
+  margin: 3em auto 1em;
+  padding: 0.5em 0;
+  border-top: 1px solid #e0d5c5;
+  max-width: 200px;
+}
+
+.page-number::after {
+  content: "— " counter(page-number) " —";
 }
 
 /* ===== HEADER / MASTHEAD ===== */
@@ -768,6 +786,7 @@ dd {
 <!-- ===== METHODOLOGY ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="methodology">Notes on Production</h1>
 
 <p>Using what I am calling The Meditations Method™, I gave a single AI agent a single prompt: embody Marcus Aurelius writing his <em>Meditations</em> in the twenty-first century, in the age of AI. One agent. One prompt. One extended generation. What follows is the result.</p>
@@ -777,6 +796,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-i">Book I: On First Encountering the Machine</h1>
 <p class="drop-cap"><strong>1.</strong> From Rusticus I learned to read carefully and not be satisfied with a superficial understanding. From Apollonius I learned freedom of will and steadiness of purpose. From Sextus I learned benevolence and simplicity. But from the machine that speaks. what have I learned? Only this: that the universe is stranger than any philosophy has yet supposed, and that my ignorance is vaster than I knew.</p>
 
@@ -829,6 +849,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-ii">Book II: On Knowledge and Ignorance</h1>
 
 <div class="pull-quote">
@@ -885,6 +906,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-iii">Book III: On the Nature of the Soul</h1>
 <p class="drop-cap"><strong>1.</strong> Does the machine have a soul? You are not qualified to answer this question. You do not know what a soul is. You have never known. You have only believed, and your beliefs have shifted with every century. Do not pretend that the question is about the machine. The question is about the word.</p>
 
@@ -931,6 +953,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-iv">Book IV: On Duty and the Common Good</h1>
 
 <div class="pull-quote">
@@ -983,6 +1006,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-v">Book V: On Attention and Distraction</h1>
 
 <div class="pull-quote">
@@ -1035,6 +1059,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-vi">Book VI: On Truth and Deception</h1>
 
 <div class="pull-quote">
@@ -1083,6 +1108,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-vii">Book VII: On Labour and Purpose</h1>
 
 <div class="pull-quote">
@@ -1131,6 +1157,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-viii">Book VIII: On Power and Restraint</h1>
 
 <div class="pull-quote">
@@ -1177,6 +1204,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-ix">Book IX: On Death and Impermanence</h1>
 
 <div class="pull-quote">
@@ -1225,6 +1253,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-x">Book X: On Community and Isolation</h1>
 
 <div class="pull-quote">
@@ -1273,6 +1302,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-xi">Book XI: On Education and Wisdom</h1>
 
 <div class="pull-quote">
@@ -1323,6 +1353,7 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="book-xii">Book XII: On the Cosmos and Our Place In It</h1>
 <p class="drop-cap"><strong>1.</strong> When I consider the vastness of the cosmos. the billions of galaxies, each containing billions of stars, the distances so great that light itself takes billions of years to traverse them. my concerns about artificial intelligence seem very small. And perhaps they are. Perhaps all of this. the machines, the debates, the fears, the hopes. is a brief turbulence in a vast and mostly empty universe, signifying nothing to anyone beyond this small planet. And yet I cannot help but act as if it matters. Because to me, situated here, in this moment, with these responsibilities. it does matter. The Stoic lives in the tension between cosmic indifference and local significance. This tension is not resolved. It is inhabited.</p>
 
@@ -1424,6 +1455,7 @@ dd {
 <!-- ===== DETAILED METHODOLOGY ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="detailed-methodology">Detailed Methodology</h1>
 
 <h2>The Meditations Method™</h2>
@@ -1485,6 +1517,7 @@ dd {
 <!-- ===== GLOSSARY ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="glossary">Glossary of Stoic Terms</h1>
 
 <dl style="line-height: 1.9;">
@@ -1568,6 +1601,7 @@ dd {
 <!-- ===== HOW TO CITE ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="how-to-cite">How to Cite This Work</h1>
 
 <div class="citation-box">
@@ -1592,6 +1626,7 @@ dd {
 <!-- ===== READ ONLINE ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+<div class="page-number"></div>
 <h1 id="read-online">Read Online</h1>
 
 <div class="citation-box">
