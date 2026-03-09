@@ -610,63 +610,95 @@ dd {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 17px;
     background: var(--color-bg);
   }
   body {
     padding: 0;
     background: var(--color-bg);
+    margin: 0;
   }
   .document-page {
     max-width: 100%;
     min-height: auto;
     margin: 0;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.25rem;
     box-shadow: none;
+    border-bottom: 1px solid #e0d5c5;
+  }
+  .document-page:first-child {
+    border-bottom: none;
   }
   .page-number {
     display: none;
   }
+  .section-divider {
+    margin: 2rem 0;
+  }
+  .masthead {
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
   .masthead .title {
-    font-size: 1.9rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
   .masthead .subtitle {
     font-size: 1.1rem;
   }
   h1 {
-    font-size: 1.5rem;
-    margin-top: 48px;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   h2 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  p {
+    line-height: 1.7;
+    margin-bottom: 1.2em;
   }
   .pull-quote {
-    margin: 32px 0;
-    padding: 24px 20px;
+    margin: 1.5rem -0.5rem;
+    padding: 1.25rem 1rem;
   }
   .pull-quote p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   .toc {
-    padding: 20px 24px;
+    padding: 1rem;
+  }
+  .toc ol {
+    padding-left: 1.5rem;
+  }
+  .abstract, .provenance-block {
+    padding: 1.25rem;
   }
   .drop-cap::first-letter {
-    font-size: 3em;
+    font-size: 2.5em;
+    line-height: 0.9;
   }
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
   .document-page {
-    padding: 1rem 0.75rem;
+    padding: 1.25rem 1rem;
   }
   .masthead .title {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
   }
-  .masthead .logo {
-    width: 90px;
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.15rem;
   }
   .provenance-block, .abstract, .toc {
-    padding: 16px;
+    padding: 1rem 0.75rem;
   }
 }
 
