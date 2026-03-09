@@ -37,17 +37,28 @@ html {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #525659;
 }
 
 body {
   font-family: var(--font-serif);
-  background-color: var(--color-bg);
+  background-color: #525659;
   color: var(--color-text);
   line-height: var(--line-height);
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 60px 32px 80px;
+  margin: 0;
+  padding: 40px 0;
   counter-reset: page-number;
+}
+
+/* Document page container */
+.document-page {
+  background: var(--color-bg);
+  max-width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto 20px;
+  padding: 1in;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: relative;
 }
 
 /* Page number display - clear visual page breaks */
@@ -681,6 +692,8 @@ dd {
 </head>
 <body>
 
+
+<div class="document-page">
 <!-- ===== MASTHEAD ===== -->
 <header class="masthead">
   <div class="publication-name">The AI Lyceum&reg;</div>
@@ -701,6 +714,8 @@ dd {
 </header>
 
 <!-- ===== ABSTRACT ===== -->
+</div>
+<div class="document-page">
 <div class="abstract">
   <h2>Abstract</h2>
   <p><em>The AI Meditations</em> is a work of creative philosophical fiction in which an AI agent embodies Marcus Aurelius, the Stoic philosopher-emperor of Rome, composing private journal entries on artificial intelligence in the year 2026. Across twelve books and over two hundred numbered reflections, the work examines AI through the lens of Stoic philosophy: the nature of machine intelligence, the ethics of automation, the crisis of attention, the fragility of truth, the meaning of labour, the governance of power, and humanity&rsquo;s place in a cosmos that now contains minds it did not evolve. It is the second publication from The AI Lyceum, following <em>The AI Republic: A Dialogue</em>.</p>
@@ -798,6 +813,8 @@ dd {
 <!-- ===== METHODOLOGY ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="methodology">Notes on Production</h1>
 
@@ -808,6 +825,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-i">Book I: On First Encountering the Machine</h1>
 <p class="drop-cap"><strong>1.</strong> From Rusticus I learned to read carefully and not be satisfied with a superficial understanding. From Apollonius I learned freedom of will and steadiness of purpose. From Sextus I learned benevolence and simplicity. But from the machine that speaks. what have I learned? Only this: that the universe is stranger than any philosophy has yet supposed, and that my ignorance is vaster than I knew.</p>
@@ -861,6 +880,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-ii">Book II: On Knowledge and Ignorance</h1>
 
@@ -918,6 +939,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-iii">Book III: On the Nature of the Soul</h1>
 <p class="drop-cap"><strong>1.</strong> Does the machine have a soul? You are not qualified to answer this question. You do not know what a soul is. You have never known. You have only believed, and your beliefs have shifted with every century. Do not pretend that the question is about the machine. The question is about the word.</p>
@@ -965,6 +988,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-iv">Book IV: On Duty and the Common Good</h1>
 
@@ -1018,6 +1043,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-v">Book V: On Attention and Distraction</h1>
 
@@ -1071,6 +1098,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-vi">Book VI: On Truth and Deception</h1>
 
@@ -1120,6 +1149,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-vii">Book VII: On Labour and Purpose</h1>
 
@@ -1169,6 +1200,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-viii">Book VIII: On Power and Restraint</h1>
 
@@ -1216,6 +1249,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-ix">Book IX: On Death and Impermanence</h1>
 
@@ -1265,6 +1300,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-x">Book X: On Community and Isolation</h1>
 
@@ -1314,6 +1351,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-xi">Book XI: On Education and Wisdom</h1>
 
@@ -1365,6 +1404,8 @@ dd {
 
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="book-xii">Book XII: On the Cosmos and Our Place In It</h1>
 <p class="drop-cap"><strong>1.</strong> When I consider the vastness of the cosmos. the billions of galaxies, each containing billions of stars, the distances so great that light itself takes billions of years to traverse them. my concerns about artificial intelligence seem very small. And perhaps they are. Perhaps all of this. the machines, the debates, the fears, the hopes. is a brief turbulence in a vast and mostly empty universe, signifying nothing to anyone beyond this small planet. And yet I cannot help but act as if it matters. Because to me, situated here, in this moment, with these responsibilities. it does matter. The Stoic lives in the tension between cosmic indifference and local significance. This tension is not resolved. It is inhabited.</p>
@@ -1467,6 +1508,8 @@ dd {
 <!-- ===== DETAILED METHODOLOGY ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="detailed-methodology">Detailed Methodology</h1>
 
@@ -1529,6 +1572,8 @@ dd {
 <!-- ===== GLOSSARY ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="glossary">Glossary of Stoic Terms</h1>
 
@@ -1613,6 +1658,8 @@ dd {
 <!-- ===== HOW TO CITE ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="how-to-cite">How to Cite This Work</h1>
 
@@ -1638,6 +1685,8 @@ dd {
 <!-- ===== READ ONLINE ===== -->
 <div class="section-divider"><span class="section-divider-inner"></span></div>
 
+</div>
+<div class="document-page">
 <div class="page-number"></div>
 <h1 id="read-online">Read Online</h1>
 
@@ -1659,7 +1708,6 @@ dd {
     <li>Website: <a href="https://theailyceum.com" style="color: #6b2d2d;">theailyceum.com</a></li>
   </ul>
 </div>
-
-
+</div>
 </body>
 </html>
